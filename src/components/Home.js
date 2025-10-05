@@ -73,23 +73,23 @@ const PhotographyWebsite = () => {
 
             {/* Desktop Menu */}
             <ul className="nav-menu">
-              <li><a href="#" className="nav-link">Home</a></li>
-              <li><a href="#services" className="nav-link">Services</a></li>
-              <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
-              <li><a href="#about" className="nav-link">About</a></li>
-              <li><a href="#contact" className="nav-link">Contact</a></li>
-              <li><a href="#privacy" className="nav-link">Privacy policy</a></li>
+              <li><a href="/" onClick={(e) => e.preventDefault()} className="nav-link">Home</a></li>
+              <li><a href="/services" onClick={(e) => e.preventDefault()} className="nav-link">Services</a></li>
+              <li><a href="/portfolio" onClick={(e) => e.preventDefault()} className="nav-link">Portfolio</a></li>
+              <li><a href="/about" onClick={(e) => e.preventDefault()} className="nav-link">About</a></li>
+              <li><a href="/contact" onClick={(e) => e.preventDefault()} className="nav-link">Contact</a></li>
+              <li><a href="/privacy" onClick={(e) => e.preventDefault()} className="nav-link">Privacy policy</a></li>
             </ul>
 
             {/* Social Icons */}
             <div className="social-icons">
-              <a href="#">
+              <a href="/" onClick={(e) => e.preventDefault()}>
                 <Instagram size={20} />
               </a>
-              <a href="#">
+              <a href="/" onClick={(e) => e.preventDefault()}>
                 <Linkedin size={20} />
               </a>
-              <a href="#">
+              <a href="/" onClick={(e) => e.preventDefault()}>
                 <MessageCircle size={20} />
               </a>
             </div>
@@ -107,12 +107,12 @@ const PhotographyWebsite = () => {
           {isMenuOpen && (
             <div className="mobile-menu animate-slide-down">
               <div className="mobile-menu-content">
-                <a href="#">Home</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#privacy">Privacy policy</a>
+                <a href="/" onClick={(e) => e.preventDefault()}>Home</a>
+                <a href="/services" onClick={(e) => e.preventDefault()}>Services</a >
+                <a href="/portfolio" onClick={(e) => e.preventDefault()}>Portfolio</a>
+                <a href="/about" onClick={(e) => e.preventDefault()}>About</a>
+                <a href="/contact" onClick={(e) => e.preventDefault()}>Contact</a>
+                <a href="/privacy" onClick={(e) => e.preventDefault()}>Privacy policy</a>
                 <div className="mobile-social">
                   <Instagram size={20} />
                   <Linkedin size={20} />

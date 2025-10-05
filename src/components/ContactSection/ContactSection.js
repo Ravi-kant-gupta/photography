@@ -20,9 +20,9 @@ const ContactSection = () => {
           </p>
           
           <div className="social-icons">
-            <a href="#instagram" className="social-icon" aria-label="Instagram">📷</a>
-            <a href="#linkedin" className="social-icon" aria-label="LinkedIn">💼</a>
-            <a href="#whatsapp" className="social-icon" aria-label="WhatsApp">💬</a>
+            <a href="/instagram" onClick={(e) => e.preventDefault()} className="social-icon" aria-label="Instagram">📷</a>
+            <a href="/linkedin" onClick={(e) => e.preventDefault()} className="social-icon" aria-label="LinkedIn">💼</a>
+            <a href="/whatsapp" onClick={(e) => e.preventDefault()} className="social-icon" aria-label="WhatsApp">💬</a>
           </div>
 
           <div className="contact-details">
