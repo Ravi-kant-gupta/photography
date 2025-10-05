@@ -47,9 +47,9 @@ const LocationSection = () => {
   const longitude = 77.092567;
   const externalMapUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
-  const handleOpenMap = () => {
-    window.open(externalMapUrl, '_blank');
-  };
+  // const handleOpenMap = () => {
+  //   window.open(externalMapUrl, '_blank');
+  // };
 
   return (
     <section className="location-section">
