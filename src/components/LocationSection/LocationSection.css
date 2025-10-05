@@ -1,0 +1,118 @@
+.location-section {
+  /* background: linear-gradient(135deg, #f5f5f5 0%, #e5e5e5 100%); */
+  background: linear-gradient(135deg, #000000 0%, #2d1b4e 100%);
+  padding: 40px 0px;
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.location-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: 'Poppins', 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.location-description {
+  color: #e5e7eb;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+  font-family: 'Inter', 'Roboto', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.location-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+}
+
+.detail-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-family: 'Poppins', 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.detail-text {
+  color: #d1d5db;
+  line-height: 1.6;
+  font-family: 'Inter', 'Roboto', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.map-button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #1f1f1f 0%, #0f0f0f 100%);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.map-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.map-button span {
+  font-size: 1.2rem;
+}
+
+.location-map {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  min-height: 450px;
+  position: relative;
+  background: #e5e5e5;
+}
+
+.map-iframe {
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+}
+
+@media (max-width: 768px) {
+  .location-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .location-title {
+    font-size: 2rem;
+  }
+
+  .map-button {
+    width: 100%;
+  }
+  
+  .location-map {
+    min-height: 350px;
+  }
+}
