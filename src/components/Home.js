@@ -130,7 +130,7 @@ const PhotographyWebsite = () => {
         
         <div className={`hero-content ${isVisible ? 'visible animate-fade-in-up' : ''}`}>
           <h1 className="hero-title">
-            Visuals that Speak.
+            Visuals that Speak-------.
           </h1>
           <h2 className="hero-subtitle">
             Stories that Sell.
